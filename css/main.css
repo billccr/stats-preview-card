@@ -92,18 +92,13 @@ main {
 	background-color: hsl(233, 47%, 7%);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
 }
 
 #card {
-	margin: 1rem;
+	margin: 1.4rem;
 	background-color: hsl(277, 64%, 61%);
-#	display: flex;
-#	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	height: 100%;
 	border-radius: 0.8rem;
@@ -121,36 +116,53 @@ main {
 }
 
 #text-content {
-	padding: 1em;
+	padding: 1rem 2rem;
 	background-color: hsl(244, 38%, 16%);
+	border-radius: 0 0 0.8rem 0.8rem;
+}
+
+#text-content p {
+	font-family: 'Inter', sans-serif;
+	color: hsla(0, 0%, 100%, 0.55);
+	line-height: 1.6;
+	padding: 0 0.5rem;
 }
 
 #card h1 {
 	font-family: 'Inter', sans-serif;
+	font-size: 1.7rem;
+	line-height: 1.1;
+	padding: 0 1.2rem;
 }
 
 #card h1 span.highlight {
 	color: hsl(277, 64%, 61%);
 }
 
-#card p {
-	font-family: 'Inter', sans-serif;
-	color: hsla(0, 0%, 100%, 0.75);
+#stats {
+	margin-top: 1.6rem;
 }
 
-#card .heading {
-	font-family: 'Lexend Deca', sans-serif;
-	font-size: 0.6rem;
-	color: hsla(0, 0%, 100%, 0.6);
+#stats div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0.5rem 0;
 }
 
-#card ul {
-	list-style-type: none;
-	padding-left: 0;
+#stats dt {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 1.3rem;
 }
 
-#card li {
-	padding-left: 0;
+#stats dd.heading {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 0.7rem;
+	font-weight: 400;
+	margin-left: 0;
+	padding-top: 0.2rem;
+	color: hsla(0, 0%, 100%, 0.5)
 }
 
 .attribution {
@@ -251,6 +263,10 @@ main {
 
 @media only screen and (min-width: 35em) {
 	/* Style adjustments for viewports that meet the condition */
+	#card {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 }
 
 @media print,
