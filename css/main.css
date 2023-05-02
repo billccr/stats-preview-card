@@ -12,8 +12,9 @@
 	 ========================================================================== */
 
 html {
-	color: #222;
-	font-size: 1em;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(233, 47%, 7%);
+	font-size: 15px;
 	line-height: 1.4;
 }
 
@@ -86,6 +87,71 @@ textarea {
 /* ==========================================================================
 	 Author's custom styles
 	 ========================================================================== */
+
+main {
+	background-color: hsl(233, 47%, 7%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#card {
+	margin: 1rem;
+	background-color: hsl(277, 64%, 61%);
+#	display: flex;
+#	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	border-radius: 0.8rem;
+}
+
+#card img {
+	display: block;
+	max-width: 100%;
+	margin: 0;
+	object-fit: scale-down;
+	border-radius: 0.8rem 0.8rem 0 0;
+	background-color: hsl(277, 64%, 61%);
+	mix-blend-mode: multiply;
+	opacity: 0.8;
+}
+
+#text-content {
+	padding: 1em;
+	background-color: hsl(244, 38%, 16%);
+}
+
+#card h1 {
+	font-family: 'Inter', sans-serif;
+}
+
+#card h1 span.highlight {
+	color: hsl(277, 64%, 61%);
+}
+
+#card p {
+	font-family: 'Inter', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+#card .heading {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 0.6rem;
+	color: hsla(0, 0%, 100%, 0.6);
+}
+
+#card ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#card li {
+	padding-left: 0;
+}
 
 .attribution {
 	font-size: 11px; text-align: center;
