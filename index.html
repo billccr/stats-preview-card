@@ -28,7 +28,10 @@
 
 	<main class="container" role="main">
 		<section id="card">
-			<img src="img/image-header-mobile.jpg" alt="group of three office workers at computers">
+			<picture id="image">
+				<source srcset="img/image-header-desktop.jpg" media="(min-width: 500px)" />
+				<img src="img/image-header-mobile.jpg" alt="group of three office workers at computers" />
+			</picture>
 			<div id="text-content">
 				<h1>Get <span class="highlight">insights</span> that help your business grow.</h1>
 
@@ -37,15 +40,15 @@
 				<dl id="stats">
 					<div>
 						<dt>10k+</dt>
-						<dd class="heading">COMPANIES</dd>
+						<dd class="heading">companies</dd>
 					</div>
 					<div>
 						<dt>314</dt>
-						<dd class="heading">TEMPLATES</dd>
+						<dd class="heading">templates</dd>
 					</div>
 					<div>
 						<dt>12M+</dt>
-						<dd class="heading">QUERIES</dd>
+						<dd class="heading">queries</dd>
 					</div>
 				</dl>
 

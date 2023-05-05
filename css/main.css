@@ -93,23 +93,28 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 }
 
 #card {
-	margin: 1.4rem;
+	max-width: 30rem;
+	margin: 0 1.4rem;
 	background-color: hsl(277, 64%, 61%);
 	text-align: center;
-	height: 100%;
+#	height: 100%;
 	border-radius: 0.8rem;
+	overflow: hidden;
 }
 
-#card img {
+#image {
+
+}
+
+#image img {
 	display: block;
 	max-width: 100%;
 	margin: 0;
-	object-fit: scale-down;
-	border-radius: 0.8rem 0.8rem 0 0;
 	background-color: hsl(277, 64%, 61%);
 	mix-blend-mode: multiply;
 	opacity: 0.8;
@@ -118,7 +123,6 @@ main {
 #text-content {
 	padding: 1rem 2rem;
 	background-color: hsl(244, 38%, 16%);
-	border-radius: 0 0 0.8rem 0.8rem;
 }
 
 #text-content p {
@@ -141,11 +145,11 @@ main {
 
 #stats {
 	margin-top: 1.6rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #stats div {
-	display: flex;
-	flex-direction: column;
 	text-align: center;
 	padding: 0.5rem 0;
 }
@@ -160,6 +164,7 @@ main {
 	font-family: "Lexend Deca", sans-serif;
 	font-size: 0.7rem;
 	font-weight: 400;
+	text-transform: uppercase;
 	margin-left: 0;
 	padding-top: 0.2rem;
 	color: hsla(0, 0%, 100%, 0.5)
@@ -261,11 +266,66 @@ main {
 	 Modify as content requires.
 	 ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 60rem) {
 	/* Style adjustments for viewports that meet the condition */
+
+	main {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
 	#card {
 		display: flex;
 		flex-direction: row-reverse;
+		width: 92vw;
+		max-width: 65rem; 		/* adjust this per browser size (on mobile too) */
+		margin: 0;
+		height: 350px;
+		overflow: hidden;
+	}
+
+	#image {
+		width: 50%;
+		height: 400px;
+	}
+
+	#image img {
+		max-width: none;
+		height: 100%;
+ 		object-fit: cover;
+	}
+
+	#card h1 {
+		padding: 0.5rem 0 0 0.5rem;
+		font-size: 1.8rem;
+	}
+
+	#text-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+		width: 50%;
+		height: 400px;
+ 		padding: 2rem 3.5rem;
+	}
+
+	#text-content p {
+		padding-bottom: 1.5rem;
+		padding-right: 0;
+	}
+
+	#stats {
+#		display: flex;
+		flex-direction: row;
+		justify-items: center;
+		width: 100%;
+	}
+
+	#stats div {
+		flex-grow: 1;
+		text-align: left;
+		padding-left: 0.5rem;
 	}
 }
 
